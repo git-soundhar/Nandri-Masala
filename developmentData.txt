@@ -1,1 +1,25 @@
 Nandri MASALA DEVELOPMENT DATA
+top bar - padding:0.5 rem 1rem
+
+rightNavigation,leftnavigation -gap 1.5rem
+/
+ --sitefont:"Poppins", sans-serif;
+    --theme1:rgb(233, 53, 57); red
+    --theme2:rgb(128,128,128); gray
+    --theme3:rgb(52, 119, 88); green
+    --theme4:rgb(255,255,255); white 
+    --theme5:rgb(0,0,0); black
+ /
+
+ font-size break points
+
+this break points for top  bar
+max-width:400px -font-size:11px
+max-width:450px -font-size:14px
+
+this break points for navigation bar
+max-width:1115px -font-size:14px;
+max-width:1050px -font-size:13px
+max-width:1200px -font-size:15px;
+
+

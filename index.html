@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <!-- AOS CSS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- whole container of home page -->
@@ -36,7 +38,244 @@
                 </section>
              </div>
           </section>
+          <!-- navvigation bar code -->
+           <nav id="mainNav">
+            <!-- menubar button -->
+            <i class="fa-solid fa-bars" id="menuTrue"></i>
+
+              <div class="navLeft">
+                  <ul id="leftNavigation" class="navigationLinks">
+                     <li><a href="#">All Products</a></li>
+                     <li><a href="#">Masala and Spices</a></li>
+                     <li><a href="#">BriyaniMix and Combo</a></li>
+                  </ul> 
+              </div>
+              <div class="navLogo">
+                  <a href="./index.html"><img src="./nandrimasalaimages/mainlogo.png"/></a>
+              </div>
+
+              
+              <div class="navRight">
+                    <ul id="rightNavigation" class="navigationLinks">
+                       <li><a href="#">All Products</a></li>
+                       <li><a href="#">Masala and Spices</a></li>
+                       <li><a href="#">BriyaniMix and Combo</a></li>
+                    </ul>
+              </div>
+              <!-- cart button -->
+              <div id="cartLogo">
+                <i class="fa-solid fa-cart-shopping"> CART</i>
+                <span class="badge" id="badge">0</span>
+              </div>
+           </nav>
        </header>
+       
+       <!-- mobile navigation bar section -->
+       <nav id="mobilenav" class="mobnav">
+        <!-- logo container -->
+        <div class="logoContainer">
+            <a href="./index.html"><img src="./nandrimasalaimages/mainlogo.png"/></a>
+            <i class="fa-solid fa-x" id="closeMenu"></i>
+        </div>
+        <!-- search box container -->
+        <div class="searchContainer">
+            <form id="searchProduct">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" name="search" placeholder="Search Products"/>
+            </form> 
+        </div>
+        <!-- mobile navigation links -->
+
+        <ul class="mobilenavigaltionLinks">
+            <li><i class="fa-solid fa-cart-shopping"></i>All Products</li>
+            <li><i class="fa-solid fa-utensils"></i>Masala and Spices</li>
+            <li><i class="fa-solid fa-utensils"></i>Briyani Mix and Combo</li>
+            <li><i class="fa-solid fa-utensils"></i>Pickle and Sambal</li>
+            <li><i class="fa-solid fa-utensils"></i>Oil and Ghee</li>
+            <li><i class="fa-solid fa-utensils"></i>Recipies</li>
+        </ul>
+    </nav>
+
+    <!-- how to order section -->
+     <!-- <section class="howtoOrder">
+        <img src="./nandri masala images/howtoorderlogo.png"/>
+     </section> -->
+
+     <!-- home section content -->
+     <section class="homeBanner">
+        <img id="homebanner" src="./nandrimasalaimages/homepagebanner1.webp"/>
+    </section>
+    
+    <!-- tamilquote section -->
+    <section class="tamilQuoteSection">
+        <h1>&quot; உணவே மருந்து &quot;</h1>
+        <img src="./nandrimasalaimages/homepagebanner2.jpg"/>
+    </section>
+
+    <!-- popular category section -->
+     <section class="popularCategory">
+         <div class="dummyLine"></div>
+         <h1>Popular Categories</h1>
+         <p>Being a quality-conscious entity, we ensure that the offered products adhere to the norms of the industry</p>
+
+         <!-- populal products -->
+      <section class="popularProducts">
+        <!-- row 1 -->
+        <div class="popularCategoriesRow Row1">
+            <div class="masalaAndSpices popular">
+                <img src="./nandrimasalaimages/masala&spicescommon.webp"/>
+                <div class="popularProductsContent">
+                    <p>Nandri Masala</p>
+                    <h1>Masala And Spices</h1>
+                    <span>View Now</span>
+                </div>
+            </div>
+
+            <div class="briyaniMixAndCombo popular">
+                <img src="./nandrimasalaimages/briyanimixcombocommon.webp"/>
+                <div class="popularProductsContent">
+                    <p>Nandri Masala</p>
+                    <h1>Briyani Mix And Combo</h1>
+                    <span>View Now</span>
+                </div>
+            </div>
+        </div>
+         <!-- row 2 -->
+         <div class="popularCategoriesRow Row2">
+            <div class="masalaAndSpices popular">
+                <img src="./nandrimasalaimages/pickle&sambalcommon.webp"/>
+                <div class="popularProductsContent">
+                    <p>Nandri Masala</p>
+                    <h1>Pickle And Sambal</h1>
+                    <span>View Now</span>
+                </div>
+            </div>
+
+            <div class="briyaniMixAndCombo popular">
+                <img src="./nandrimasalaimages/ghee&oilcommon.webp"/>
+                <div class="popularProductsContent">
+                    <p>Nandri Masala</p>
+                    <h1>Ghee And Oil</h1>
+                    <span>View Now</span>
+                </div>
+            </div>
+         </div>
+      </section>
+     </section>
+<!-- homepagde banner 3 -->
+     <section class="dindigulBriyaniPoster">
+        <img src="./nandrimasalaimages/homepagebanner3.jpg"/>
+     </section>
+<!-- why choose us section -->
+ <section id="whyChooseUs">
+    <div class="dummyLine"></div>
+     <h1>Why Choose Us</h1>
+        <div class="ourSpecial">
+           <div class="special special1" data-aos="zoom-in">
+                <div class="chooseImgContainer">
+                    <img src="./nandrimasalaimages/chooselogo.png"/>
+                </div>
+                <h3>No Artificial Colors</h3>
+                <sanp>No artificial colors added</span>
+           </div>
+           <!-- special 2 -->
+           <div class="special special2" data-aos="zoom-in" data-aos-delay="500">
+             <div class="chooseImgContainer">
+                <img src="./nandrimasalaimages/chooselogo.png"/>
+             </div>
+             <h3>No Artificial Colors</h3>
+             <sanp>No artificial colors added</span>
+           </div>
+           <!-- special 3 -->
+           <div class="special special3"  data-aos="zoom-in" data-aos-delay="1000">
+             <div class="chooseImgContainer">
+                <img src="./nandrimasalaimages/chooselogo.png"/>
+             </div>
+             <h3>No Artificial Colors</h3>
+             <sanp>No artificial colors added</span>
+           </div>
+        </div>
+        
+ </section>
+   <!-- commonBadge ShopNow button -->
+      <div class="commonBadgeShopNow">
+        <h1>100% Secure delivery without contacting the courier.</h1>
+        <span class="shopBtn">Shop Now</span>
+      </div>
+      <!-- our uniqueness -->
+      <h1 class="themeQuote">&quot; உணவே மருந்து &quot;</h1>
+       <section class="ourUniqueness">
+           <div class="unique curated" >
+              <img src="./nandrimasalaimages/curated.png"/>
+              <h4>Curated Products</h4>
+              <p>Eating native grown foods has many benefits</p>
+           </div>
+           
+           <div class="unique homemade" >
+            <img src="./nandrimasalaimages/homemade.png"/>
+              <h4>Homemade</h4>
+              <p>Made with passion by 300+ curators across.</p>
+           </div>
+
+           <div class="unique natural" >
+             <img src="./nandrimasalaimages/natural.png"/>
+             <h4>100&percnt; Natural</h4>
+             <p>Made with passion by 300+ curators across.</p>
+           </div>
+       </section>
+     <footer class="footerSection">
+         <section class="footerContent">
+            <!-- section 1 -->
+          <div class="aboutFootContent">
+            <img src="./nandrimasalaimages/mainlogo.png"/>
+             <address>
+                <p>Pugal Plaza,Annur Main Road,Karumatahampati,Nearby SivaKannan Restaurant,Sulur TK,Coimbatore-641659</p>
+             </address>
+          </div>
+          <!-- section 2 -->
+           <div class="ourCompany">
+             <h3>OUR COMPANY</h3>
+             <div class="companyLinks">
+               <span> <i class="fa-solid fa-angle-right"></i> About US</span>
+               <span> <i class="fa-solid fa-angle-right"></i> Recipies</span>
+               <span> <i class="fa-solid fa-angle-right"></i> ConytactUS</span>
+               <span> <i class="fa-solid fa-angle-right"></i> Privacy Policy</span>
+               <span> <i class="fa-solid fa-angle-right"></i> International Shipping Policy</span>
+               <span> <i class="fa-solid fa-angle-right"></i> Terms &amp; conditions</span>
+               <span> <i class="fa-solid fa-angle-right"></i> Return &amp; Refund</span>
+             </div>
+           </div>
+           <!-- section 3 -->
+            <div class="socialAccounts">
+                <h3>SOCIAL ACCOUNTS</h3>
+               <span><i class="fa-brands fa-facebook"></i> Facebook</span>
+               <span><i class="fa-brands fa-instagram"></i> Instagram</span>
+               <span><i class="fa-brands fa-youtube"></i>Youtube</span>
+               <div class="socialIcons">
+                  <img src="./nandrimasalaimages/masterCard.png"/>
+                  <img src="./nandrimasalaimages/paypal.png"/>
+                  <img src="./nandrimasalaimages/amerianexpress.png"/>
+                  <img src="./nandrimasalaimages/bitcoin.png">
+                  <img src="./nandrimasalaimages/westernUnion.png"/>
+                  <img src="./nandrimasalaimages/visa.png"/>
+               </div>
+            </div>
+            <!-- section 4 -->
+             <div class="followUs">
+               <h3>FOLLOW US</h3>
+               <span><i class="fa-brands fa-whatsapp"></i> &#40;&plus;91&#41;81100 44111</span>
+             </div>
+         </section>
+         <div class="copyRightSection">
+            <p>copyright &copy; Nandri Masala. All Rights Reserved Developed by Soundhar.</p>
+         </div>
+     </footer>
     </main>
+    <script src="./js/index.js"></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

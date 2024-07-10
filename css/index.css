@@ -4,6 +4,7 @@
     padding:0;
     box-sizing:border-box;
     font-family:var(--sitefont);
+    list-style-type:none;
 }
 :root{
     --sitefont:"Poppins", sans-serif;
@@ -11,14 +12,23 @@
     --theme2:rgb(128,128,128);
     --theme3:rgb(52, 119, 88);
     --theme4:rgb(255,255,255);
+    --theme5:rgb(0,0,0);
 }
 /* topbar design */
+body{
+    /* background-color:aqua; */
+}
+header{
+    overflow:visible;
+}
 .topBar{
     background-color:var(--theme1);
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0.5rem 1rem;
+    width:100%;
+    font-size:1rem;
 }
 /* topbar-rightside design */
 .topbarRight{
@@ -26,13 +36,11 @@
     gap:1rem;
     justify-content:center;
     align-items:center;
-    /* background-color:blueviolet; */
 }
 /* style for visa buttons */
 .visaButtons{
     display:flex;
     padding:0 0.5rem;
-    /* background-color:aqua; */
 }
 .visaButtons span:first-child{
     border-right:2px solid var(--theme4);
@@ -42,11 +50,11 @@
    padding:0 0 0 0.5rem;
 }
 .visaButtons span{
-    font-weight:bold;
+    font-weight:400;
     color:var(--theme4);
-    /* padding:0 0.5rem; */
 }
 .visaButtons span:hover{
+    cursor:pointer;
     cursor:pointer;
 }
 /* style for search box */
@@ -65,7 +73,7 @@
 .fa-magnifying-glass{
     position:absolute;
     left:5px;
-    top:7px;
+    top:9px;
     padding:0 0 0 3px;
     color:var(--theme1);
 }
@@ -77,4 +85,693 @@
 /* style for topbar left */
 .topbarLeft{
     color:var(--theme4);
+}
+/* style for menu button */
+#menuTrue{
+    font-size:25px;
+    display:none;
+}
+/* style for navigation bar */
+#mainNav{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:1rem;
+    background-color:var(--theme4);
+    position:sticky;
+    top:0;
+    height:100px;
+}
+.navigationLinks{
+    display: inline-flex;
+    gap:5px;
+}
+.navigationLinks{
+    gap:1.5rem;
+}
+.navigationLinks{
+    font-size:1.02rem;
+    font-weight:400;
+}
+.navigationLinks a{
+    text-decoration:none;
+    color:var(--theme2);
+    font-size:1rem;
+}
+.navigationLinks a:hover{
+    color:var(--theme5);
+    transition: all 0.5s;
+    cursor:pointer;
+}
+/* logo design */
+.navLogo img{
+    height:6rem ;
+    width:6rem ;
+    object-fit:contain;
+    cursor:pointer;
+    animation-name:animatelogo;
+    animation-duration:1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count:1;
+}
+/* animation work for logo */
+@keyframes animatelogo{
+    from{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+/* cart button design */
+#cartLogo{
+    background-color:var(--theme2);
+    display: inline-block;
+    padding:8px;
+    border-radius:5px;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color:var(--theme4);
+}
+#cartLogo .fa-cart-shopping{
+   font-size:14px; 
+}
+#cartLogo:hover{
+    cursor:pointer;
+}
+/* style for badge */
+.badge{
+    position:absolute;
+    background-color:var(--theme4);
+    top:-20px;
+    left:-10px;
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    text-align:center;
+    display:none;
+}
+
+/* mobile navigation bar styles */
+/* mobile nav style */
+#mobilenav{
+    width:280px;
+    padding:10px;
+    background-color:var(--theme5);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:var(--theme1);
+    position:fixed;
+    top:0;
+    left:-100%;
+    transition:ease 0.5s;
+    z-index:9999999;
+}
+.showMenu{
+    left:0 !important;
+    transition:ease 0.5s;
+}
+.logoContainer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:120px;
+    padding:15px;
+    position:relative; 
+}
+
+.logoContainer img{
+    height:150px;
+    width:150px;
+    object-fit:contain;   
+}
+
+.searchContainer{
+    width:100%;
+}
+.searchContainer #searchProduct input{
+    width:100%;
+}
+.mobilenavigaltionLinks{
+    color:var(--theme4);
+    font-family:var(--sitefont);
+    font-size:14px;
+    font-weight:normal;
+    width:100%;
+}
+.mobilenavigaltionLinks li{
+    border-bottom:1px dotted var(--theme2);
+    padding:10px 0;
+}
+.mobilenavigaltionLinks li:hover{
+    background-color:var(--theme1);
+    cursor:pointer;
+}
+.mobilenavigaltionLinks i{
+    padding-right:10px;
+}
+.logoContainer i{
+    position:absolute;
+    top:0;
+    right:0;
+    color:var(--theme4);
+    font-size: 16px;
+}
+/* how to order logo design */
+/* .howtoOrder{
+ height:150px;
+ width:150px;
+ position:fixed;
+ top:40px;
+ z-index:99999999999;
+ animation:animateHowToOrder 1.5s infinite ease;
+}
+@keyframes animateHowToOrder{
+    0%{
+        transform:translateX(0px);
+    }
+    50%{
+        transform:translateX(20px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+.howtoOrder img{
+    height:100%;
+    width:100%;
+} */
+
+/* home page content design */
+.homeBanner img{
+  height:30rem;
+  width:100%;
+  object-fit:cover;
+}
+.tamilQuoteSection h1{
+  text-align:center;
+  color:var(--theme3);
+  font-weight:normal;
+  font-size:2rem;
+ 
+}
+.tamilQuoteSection img{
+    height:25rem;
+    width:90%;
+     object-fit:cover;
+}
+.tamilQuoteSection{
+    text-align:center;
+    padding:20px;
+}
+.dummyLine{
+    height:2px;
+    width:150px;
+    background-color:var(--theme2);
+    position:relative;
+    margin-bottom:10px;
+}
+ .dummyLine::after{
+    content:"";
+    width:50px;
+    height:4px;
+    background-color:var(--theme3);
+    position:absolute;
+    top:-1px;
+    left:30%;
+}
+.popularCategory {
+    padding:1rem;
+}
+.popularCategory{
+   display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  gap:1.2rem;
+}
+.popularCategory h1{
+    color:var(--theme1);
+    font-size:2.1rem;
+    
+}
+.popularProducts{
+   display:flex;
+   flex-direction:column; 
+}
+
+.popularCategoriesRow .popular{
+    width:50%;
+    border-radius:10px;
+    position:relative;
+}
+.popularCategoriesRow .popular:hover{
+    transform:scale(0.9);
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.popularCategoriesRow .popular img{
+    border-radius:5px;
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+.popularCategoriesRow{
+   gap:1rem;
+}
+.popularProductsContent{
+    position:absolute;
+    z-index:999;
+    bottom:0;
+    padding:18px 10px;
+    color:var(--theme4);
+    background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(128, 128, 128,0.5));
+    width:100%;
+    /* height:100%; */
+}
+.popularProductsContent h1{
+    color:var(--theme4);
+    font-size:2.1rem;
+}
+.popularCategoriesRow .popular:hover .popularProductsContent p{
+    position:relative;
+    top:-10px;
+    transition:ease 0.5s;
+    cursor:pointer;
+}
+.popularCategoriesRow .popular:hover .popularProductsContent h1{
+    position:relative;
+    top:-10px;
+    transition:ease 0.5s;
+    cursor:pointer;
+}
+.popularCategoriesRow .popular:hover .popularProductsContent span{
+    position:relative;
+    top:0;
+    visibility: visible;
+    transition:ease 0.5s;
+    cursor:pointer;
+}
+.popularProductsContent span{
+    position:relative;
+    top:15px;
+    visibility:hidden;
+}
+.Row1{
+   /* background-color:red; */
+}
+.Row2{
+    /* background-color:green; */
+ }
+.popularCategoriesRow{
+    display:flex;
+    padding:10px;
+
+}
+/* style for homepage banner 3 */
+.dindigulBriyaniPoster img{
+    object-fit:cover;
+    height:28rem;
+    width:100%;
+    margin-top:25px;
+}
+/* why choose us section styles */
+#whyChooseUs{
+    background-image:url('../nandrimasalaimages/backgroun1.avif');
+    background-size:cover;
+    /* height:200px; */
+    background-repeat:no-repeat;
+    display:flex;
+    /* justify-content:center; */
+    align-items:center;
+    flex-direction:column;
+    padding-top:35px;
+}
+#whyChooseUs h1{
+    font-size:2rem;
+    color:var(--theme3);
+}
+.ourSpecial{
+    padding-top:100px;
+    padding-bottom:100px;
+    width:100%;
+    /* background-color:yellow; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    /* gap:100px; */
+}
+.special{
+    background-color:var(--theme4);
+    width:380px;
+    height:150px;
+    position:relative;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:15px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition:ease 0.5s;
+}
+.special:hover{
+    background-color: var(--theme3);
+    transition:ease 0.5s;
+    color:var(--theme4);
+    cursor:pointer;
+}
+.special h3{
+    margin-top:50px;
+}
+.chooseImgContainer img{
+    height:135px;
+    width:135px;
+    border:10px solid var(--theme1);
+    background-color: black;
+    border-radius:50%;
+    padding:15px;
+}
+.chooseImgContainer{
+    position:absolute;
+    top:-80px;
+    text-align:center;
+    width:100%;
+}
+/* style for common badge */
+.commonBadgeShopNow{
+    background:linear-gradient(to right,rgba(128, 128, 128,0.5),rgba(0, 0, 0,0.5),rgba(128, 128, 128,0.5)),url('../nandrimasalaimages/footerbanner1.jpg');
+    height:150px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    color:var(--theme4);
+    padding: 10px;
+    gap:5px;
+}
+.shopBtn {
+    background-color:var(--theme1);
+    padding:15px 20px;
+}
+.shopBtn{
+    font-size:1rem;
+    border-radius:5px;
+}
+.shopBtn:hover{
+    background-color:var(--theme3);
+    transition:ease 0.5s;
+    cursor:pointer;
+}
+/* design for ouruniqueness */
+.themeQuote{
+    text-align: center;
+    color:var(--theme3);
+    font-weight: normal;
+    padding:30px 0 0 0;
+}
+.ourUniqueness{
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content:space-around;
+    padding:40px 10px;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+.ourUniqueness .unique img{
+    height:100px;
+    width:100px;
+}
+.ourUniqueness .unique{
+    border:1px solid var(--theme2);
+    text-align:center;
+    padding:15px 15px;
+}
+.natural{
+    /* flex-grow:1; */
+}
+/* .special{
+    width:310px;
+    height:150px;
+    background-color:aqua;
+} */
+/* .popularCategoriesRow{
+    display:flex;
+} */
+/* footer section designs */
+.footerContent{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:3rem 4rem;
+}
+.footerContent h3{
+    border-bottom:2px solid var(--theme4);
+    padding-bottom:5px;
+    margin-bottom:15px;
+    position:relative;
+}
+.footerContent h3::after{
+    content:"";
+    height:4px;
+    width:50px;
+    background-color:yellow;
+    position:absolute;
+    top:0;
+    left:0;
+    top:97%;
+}
+.home-container .footerSection{
+    width:100%;
+    background:no-repeat,linear-gradient(rgba(20, 20, 31, .4), rgba(20, 20, 31, .4)),url('../nandrimasalaimages/footerbanner1.jpg');
+    padding:1rem;
+    background-attachment:fixed;
+    background-size:cover;
+}
+/* section 1 */
+.aboutFootContent img{
+    height: 150px;
+    width:250px;
+}
+.aboutFootContent{
+    color:var(--theme4);
+    width:280px;
+    /* background-color:rgb(190, 190, 87); */
+    text-align:center;
+    padding:5px;
+}
+.aboutFootContent address p{
+    font-size:14px;
+}
+/* section 2 */
+.ourCompany{
+    color:var(--theme4);
+    width:280px;
+    /* background-color:rgb(190, 190, 87); */
+    text-align:left;
+    padding:5px;
+}
+
+.companyLinks{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    
+}
+.companyLinks span i{
+    padding-right:5px;
+    color:var(--theme1);
+}
+/* section 3 */
+.socialAccounts {
+    padding:5px;
+    color:var(--theme4);
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    width:280px;
+    /* background-color:aqua; */
+}
+.socialAccounts .socialIcons{
+    display:flex;
+    gap:10px;
+    padding:5px;
+    width:100%;
+    /* background-color:rgb(189, 145, 231); */
+}
+.socialAccounts .socialIcons img{
+    height:25px;
+    width:30px;
+    border-radius:2px;
+}
+.socialAccounts span i{
+    padding-right:5px;
+}
+/* section followUs section */
+.followUs{
+    color:var(--theme4);
+    width:280px;
+    /* background-color: antiquewhite; */
+}
+/* section 5 copy right section design*/
+.copyRightSection{
+    color:var(--theme4);
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+/* responsive codes section*/
+/* responsivde code for topbar */
+@media only screen and (max-width:991px){
+    #themequote{
+        display:none;
+    }
+    .topBar #searchProduct{
+        display:none;
+    }
+}
+@media only screen and (max-width:352px){
+    .topBar{
+        font-size:12px;
+    }
+        
+}
+@media only screen and (max-width:331px){
+    .topBar{
+        font-size:11px;
+    }
+        
+}
+@media only screen and (max-width:450px){
+    html{
+        font-size:14px;
+    }
+}
+@media only screen and (max-width:400px){
+    html{
+        font-size:11px;
+    }
+}
+
+
+/* responsive code for navigation bar */
+@media only screen and (max-width:991px){
+    #menuTrue{
+        display:inline-block;
+    }
+    #mainNav{
+        justify-content:space-between;
+    }
+    .navLeft,.navRight{
+        display:none;
+    }
+}
+@media only screen and (max-width:1200px){
+   html{
+    font-size:15px;
+   }
+}
+@media only screen and (max-width:1115px){
+    html{
+     font-size:14px;
+    }
+ }
+
+ @media only screen and (max-width:1050px){
+    html{
+     font-size:13px;
+    }
+ }
+ /* responsive code for footer */
+ @media only screen and (max-width:768px){
+    .footerContent .aboutFootContent,.footerContent .ourCompany,.footerContent .socialAccounts,.footerContent .followUs{
+        width:100%;
+        justify-content: center;
+        /* align-items:center; */
+    }
+ }
+ @media only screen and (max-width:375px){
+    .footerContent .aboutFootContent,.footerContent .ourCompany,.footerContent .socialAccounts,.footerContent .followUs{
+        width:100%;
+        justify-content: center;
+        /* align-items:center; */
+    }
+    .footerContent{
+        padding:10px;
+    }
+ }
+ /* responsive code for popular categories */
+ @media only screen and (max-width:768px){
+    .popularCategoriesRow{
+        flex-direction:column;
+    }
+    .popularCategoriesRow .popular{
+        width:100%;
+    }
+ }
+ @media only screen and (max-width:367px){
+    html{
+        font-size:10px;
+    }
+ }
+ @media only screen and (max-width:393px){
+    html{
+        font-size:9px;
+    }
+ }
+ /* responsive code for why choose us */
+ @media only screen and (max-width:1180px){
+    .ourSpecial{
+        gap:100px;
+    }
+ }
+ @media only screen and (max-width:860px){
+    .ourSpecial{
+        gap:90px;
+    }
+ }
+ @media only screen and (max-width:850px){
+    .ourSpecial{
+        gap:100px;
+    }
+    .ourSpecial .special{
+        width:80%;
+
+    }
+ }
+/* responsive code for shop now button */
+@media only screen and (max-width:828px){
+    .commonBadgeShopNow{
+        flex-direction: column;
+    }
+}
+/* responsive code for uniqueness */
+@media only screen and (max-width:768px){
+    .natural{
+        flex-grow:1;
+    }
+}
+@media only screen and (max-width:693px){
+    .curated{
+        flex-grow:1;
+    }
+}
+@media only screen and (max-width:685px){
+    .unique{
+        width:80%;
+    }
+    .natural{
+        flex-grow:unset;
+    }
+    .curated{
+        flex-grow:unset;
+    }
 }
