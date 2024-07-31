@@ -5,7 +5,7 @@ let generateStoreRoom = () => {
         return `
             <div class="productCard" id="product-id-${id}">
                <div class="cardImgContainer">
-                  <img src="${productImg}"  alt="${id}"/>
+                  <img src="${productImg}"  alt="${productName}"/>
                </div>
                <div class="productDescription">
                  <p class="productVariety">${veiety}</p> <!-- Corrected 'veiety' to 'variety' -->
