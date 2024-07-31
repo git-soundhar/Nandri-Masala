@@ -15,7 +15,9 @@
     --theme5:rgb(0,0,0);
 }
 /* topbar design */
-
+body{
+    /* background-color:aqua; */
+}
 header{
     overflow:visible;
 }
@@ -152,9 +154,6 @@ header{
     position:relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color:var(--theme4);
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 #cartLogo .fa-cart-shopping{
    font-size:1.8rem; 
@@ -168,8 +167,8 @@ header{
     background-color:var(--theme1);
     bottom:85%;
     right:75%;
-    height:30px;
-    width:30px;
+    height:25px;
+    width:25px;
     border-radius:50%;
     display: flex;
     justify-content: center;
@@ -244,222 +243,75 @@ header{
     color:var(--theme4);
     font-size: 16px;
 }
-/* how to order logo design */
-/* .howtoOrder{
- height:150px;
- width:150px;
- position:fixed;
- top:40px;
- z-index:99999999999;
- animation:animateHowToOrder 1.5s infinite ease;
-}
-@keyframes animateHowToOrder{
-    0%{
-        transform:translateX(0px);
-    }
-    50%{
-        transform:translateX(20px);
-    }
-    100%{
-        transform:translateX(0px);
-    }
-}
-.howtoOrder img{
-    height:100%;
-    width:100%;
-} */
-
-/* home page content design */
-.homeBanner img{
-  height:30rem;
-  width:100%;
-  object-fit:cover;
-}
-.tamilQuoteSection h1{
-  text-align:center;
-  color:var(--theme3);
-  font-weight:normal;
-  font-size:2rem;
- 
-}
-.tamilQuoteSection img{
-    height:25rem;
-    width:90%;
-     object-fit:cover;
-}
-.tamilQuoteSection{
-    text-align:center;
-    padding:20px;
-}
-.dummyLine{
-    height:2px;
-    width:150px;
-    background-color:var(--theme2);
-    position:relative;
-    margin-bottom:10px;
-}
- .dummyLine::after{
-    content:"";
-    width:50px;
-    height:4px;
-    background-color:var(--theme3);
-    position:absolute;
-    top:-1px;
-    left:30%;
-}
-.popularCategory {
-    padding:1rem;
-}
-.popularCategory{
-   display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  gap:1.2rem;
-}
-.popularCategory h1{
-    color:var(--theme1);
-    font-size:2.1rem;
-    
-}
-.popularProducts{
-   display:flex;
-   flex-direction:column; 
-}
-
-.popularCategoriesRow .popular{
-    width:50%;
-    border-radius:10px;
-    position:relative;
-}
-.popularCategoriesRow .popular:hover{
-    transform:scale(0.9);
-    cursor:pointer;
-    transition:all 0.5s;
-}
-.popularCategoriesRow .popular img{
-    border-radius:5px;
-    object-fit:cover;
-    width:100%;
-    height:100%;
-}
-.popularCategoriesRow{
-   gap:1rem;
-}
-.popularProductsContent{
-    position:absolute;
-    z-index:999;
-    bottom:0;
-    padding:18px 10px;
-    color:var(--theme4);
-    background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(128, 128, 128,0.5));
-    width:100%;
-    /* height:100%; */
-}
-.popularProductsContent h1{
-    color:var(--theme4);
-    font-size:2.1rem;
-}
-.popularCategoriesRow .popular:hover .popularProductsContent p{
-    position:relative;
-    top:-10px;
-    transition:ease 0.5s;
-    cursor:pointer;
-}
-.popularCategoriesRow .popular:hover .popularProductsContent h1{
-    position:relative;
-    top:-10px;
-    transition:ease 0.5s;
-    cursor:pointer;
-}
-.popularCategoriesRow .popular:hover .popularProductsContent span{
-    position:relative;
-    top:0;
-    visibility: visible;
-    transition:ease 0.5s;
-    cursor:pointer;
-}
-.popularProductsContent span{
-    position:relative;
-    top:15px;
-    visibility:hidden;
-}
-.popularCategoriesRow{
-    display:flex;
-    padding:10px;
-
-}
-/* style for homepage banner 3 */
-.dindigulBriyaniPoster img{
-    object-fit:cover;
-    height:28rem;
-    width:100%;
-    margin-top:25px;
-}
-/* why choose us section styles */
-#whyChooseUs{
-    background-image:url('../nandrimasalaimages/backgroun1.avif');
-    background-size:cover;
-    /* height:200px; */
-    background-repeat:no-repeat;
-    display:flex;
-    /* justify-content:center; */
-    align-items:center;
-    flex-direction:column;
-    padding-top:35px;
-}
-#whyChooseUs h1{
-    font-size:2rem;
-    color:var(--theme3);
-}
-.ourSpecial{
-    padding-top:100px;
-    padding-bottom:100px;
-    width:100%;
-    /* background-color:yellow; */
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    flex-wrap:wrap;
-    /* gap:100px; */
-}
-.special{
-    background-color:var(--theme4);
-    width:380px;
-    height:150px;
-    position:relative;
-    text-align:center;
+/* style for all product cards */
+.allProductsCards{
+    padding:2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:3.5rem;
+}
+.allProductsCards .productCard{
+    width:300px;
+    height:460px;
+    border:2px solid var(--theme3);
+    /* background-color:yellow; */
+    padding:10px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.productCard .productRate{
+    font-weight:bold;
+}
+.allProductsCards .productCard:hover{
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+    /* transform:scale(0.9); */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;}
+.productCard .cardImgContainer{
+    width:100%;
+    /* background-color:aqua; */
+    display:flex;
     justify-content:center;
     align-items: center;
-    gap:15px;
-    border-radius:5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    transition:ease 0.5s;
+    /* clip-path: polygon(50% 0%, 62% 36%, 100% 34%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
 }
-.special:hover{
-    background-color: var(--theme3);
-    transition:ease 0.5s;
+.productVeriety,.quantity,.productRate{
+    color:var(--theme3);
+}
+.cardImgContainer img{
+    width:100%;
+    height:280px;
+}
+.purchaseArea{
+    /* background-color:rgb(226, 43, 162); */
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:15px;
+}
+.decideQuantity{
+    background-color:var(--theme1);
     color:var(--theme4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:25%;
+    padding:5px;
+    border-radius:10px;
+}
+.shoppingCartBtn:hover{
     cursor:pointer;
 }
-.special h3{
-    margin-top:50px;
-}
-.chooseImgContainer img{
-    height:135px;
-    width:135px;
-    border:10px solid var(--theme1);
-    background-color: black;
-    border-radius:50%;
-    padding:15px;
-}
-.chooseImgContainer{
-    position:absolute;
-    top:-80px;
-    text-align:center;
-    width:100%;
+.shoppingCartBtn{
+    padding:8px;
+    background-color:var(--theme1);
+    color:var(--theme4);
+    border-radius:8px;
 }
 /* style for common badge */
 .commonBadgeShopNow{
@@ -485,32 +337,6 @@ header{
     transition:ease 0.5s;
     cursor:pointer;
 }
-/* design for ouruniqueness */
-.themeQuote{
-    text-align: center;
-    color:var(--theme3);
-    font-weight: normal;
-    padding:30px 0 0 0;
-}
-.ourUniqueness{
-    /* background-color: yellowgreen; */
-    display: flex;
-    justify-content:space-around;
-    padding:40px 10px;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:30px;
-}
-.ourUniqueness .unique img{
-    height:100px;
-    width:100px;
-}
-.ourUniqueness .unique{
-    border:1px solid var(--theme2);
-    text-align:center;
-    padding:15px 15px;
-}
-
 /* footer section designs */
 .footerContent{
     display:flex;
@@ -535,7 +361,7 @@ header{
     left:0;
     top:97%;
 }
-.home-container .footerSection{
+.footerSection{
     width:100%;
     background:no-repeat,linear-gradient(rgba(20, 20, 31, .4), rgba(20, 20, 31, .4)),url('../nandrimasalaimages/footerbanner1.jpg');
     padding:1rem;
@@ -615,7 +441,7 @@ header{
     justify-content: center;
     align-items:center;
 }
-/* responsive codes section*/
+
 /* responsivde code for topbar */
 @media only screen and (max-width:991px){
     #themequote{
@@ -695,70 +521,30 @@ header{
         padding:10px;
     }
  }
- /* responsive code for popular categories */
- @media only screen and (max-width:768px){
-    .popularCategoriesRow{
-        flex-direction:column;
-    }
-    .popularCategoriesRow .popular{
-        width:100%;
-    }
- }
- @media only screen and (max-width:367px){
-    html{
-        font-size:10px;
-    }
- }
- @media only screen and (max-width:393px){
-    html{
-        font-size:9px;
-    }
- }
- /* responsive code for why choose us */
- @media only screen and (max-width:1180px){
-    .ourSpecial{
-        gap:100px;
-    }
- }
- @media only screen and (max-width:860px){
-    .ourSpecial{
-        gap:90px;
-    }
- }
- @media only screen and (max-width:850px){
-    .ourSpecial{
-        gap:100px;
-    }
-    .ourSpecial .special{
+ /* responsive code product cards */
+ @media only screen and (max-width:672px){
+    .allProductsCards .productCard{
         width:80%;
-
+        height:unset;
+        /* display: block; */
     }
  }
-/* responsive code for shop now button */
-@media only screen and (max-width:828px){
+ @media only screen and (min-width:499px) and (max-width:672px){
+    .allProductsCards .productCard .cardImgContainer img{
+        height:400px;
+    }
+ }
+ /* responsive code for common badge shop now */
+ @media only screen and (max-width:828px){
     .commonBadgeShopNow{
         flex-direction: column;
     }
 }
-/* responsive code for uniqueness */
-@media only screen and (max-width:768px){
-    .natural{
-        flex-grow:1;
+@media only screen and (max-width:407px){
+    .commonBadgeShopNow h1{
+        font-size:20px;
     }
-}
-@media only screen and (max-width:693px){
-    .curated{
-        flex-grow:1;
-    }
-}
-@media only screen and (max-width:685px){
-    .unique{
-        width:80%;
-    }
-    .natural{
-        flex-grow:unset;
-    }
-    .curated{
-        flex-grow:unset;
+    .commonBadgeShopNow .shopBtn{
+        padding:10px;
     }
 }

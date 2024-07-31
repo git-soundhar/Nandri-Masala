@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <!-- fontawesome cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+     <link rel="stylesheet" type="text/css" href="./css/allProducts.css"/>
+</head>
+<body>
+    <main class="AllProductsSection">
+        <header>
+            <!-- topbar section -->
+              <section class="topBar">
+                <!-- rightside content -->
+                 <p class="topbarLeft">Delivery within 3-5 working days</p>
+    
+                 <!-- center content -->
+                 <p id="themequote">&quot;உணவே மருந்து&quot;</p>
+    
+                 <!-- left side content -->
+                 <div class="topbarRight">
+                    
+                    <form id="searchProduct">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search" name="search" placeholder="Search Products"/>
+                    </form>
+                    <!-- login signup buttons -->
+                    <section class="visaButtons">
+                        <span class="login">Login</span>
+                        <span class="signin">Sign Up</span>
+                    </section>
+                 </div>
+              </section>
+              <!-- navvigation bar code -->
+               <nav id="mainNav">
+                <!-- menubar button -->
+                <i class="fa-solid fa-bars" id="menuTrue"></i>
+    
+                  <div class="navLeft">
+                      <ul id="leftNavigation" class="navigationLinks">
+                         <li><a href="./allProducts.html">All Products</a></li>
+                         <li><a href="#">Masala and Spices</a></li>
+                         <li><a href="#">BriyaniMix and Combo</a></li>
+                      </ul> 
+                  </div>
+                  <div class="navLogo">
+                      <a href="./index.html"><img src="./nandrimasalaimages/mainlogo.png"/></a>
+                  </div>
+    
+                  
+                  <div class="navRight">
+                        <ul id="rightNavigation" class="navigationLinks">
+                           <li><a href="#">Pickle and Sambal</a></li>
+                           <li><a href="#">Oil and Ghee</a></li>
+                           <li><a href="#">Recipies</a></li>
+                        </ul>
+                  </div>
+                  <!-- cart button -->
+                  <div id="cartLogo">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge" id="badge">0</span>
+                  </div>
+               </nav>
+           </header>
+           
+           <!-- mobile navigation bar section -->
+           <nav id="mobilenav" class="mobnav">
+            <!-- logo container -->
+            <div class="logoContainer">
+                <a href="./index.html"><img src="./nandrimasalaimages/mainlogo.png"/></a>
+                <i class="fa-solid fa-x" id="closeMenu"></i>
+            </div>
+            <!-- search box container -->
+            <div class="searchContainer">
+                <form id="searchProduct">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search" name="search" placeholder="Search Products"/>
+                </form> 
+            </div>
+            <!-- mobile navigation links -->
+    
+            <ul class="mobilenavigaltionLinks">
+                <li><i class="fa-solid fa-cart-shopping"></i>All Products</li>
+                <li><i class="fa-solid fa-utensils"></i>Masala and Spices</li>
+                <li><i class="fa-solid fa-utensils"></i>Briyani Mix and Combo</li>
+                <li><i class="fa-solid fa-utensils"></i>Pickle and Sambal</li>
+                <li><i class="fa-solid fa-utensils"></i>Oil and Ghee</li>
+                <li><i class="fa-solid fa-utensils"></i>Recipies</li>
+            </ul>
+        </nav>
+        <!-- content for all products section -->
+         <main class="allProductsContainer">
+            <!-- commonBadge ShopNow button -->
+            <div class="commonBadgeShopNow">
+              <h1>100% Secure delivery without contacting the courier.</h1>
+              <span class="shopBtn">Shop Now</span>
+            </div>
+            <!-- stock view area -->
+            <section class="allProductsCards" id="stockView">
+
+              
+            </section>
+         </main>
+        <!-- footer section -->
+        <footer class="footerSection">
+            <section class="footerContent">
+               <!-- section 1 -->
+             <div class="aboutFootContent">
+               <img src="./nandrimasalaimages/mainlogo.png"/>
+                <address>
+                   <p>Pugal Plaza,Annur Main Road,Karumatahampati,Nearby SivaKannan Restaurant,Sulur TK,Coimbatore-641659</p>
+                </address>
+             </div>
+             <!-- section 2 -->
+              <div class="ourCompany">
+                <h3>OUR COMPANY</h3>
+                <div class="companyLinks">
+                  <span> <i class="fa-solid fa-angle-right"></i> About US</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> Recipies</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> ConytactUS</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> Privacy Policy</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> International Shipping Policy</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> Terms &amp; conditions</span>
+                  <span> <i class="fa-solid fa-angle-right"></i> Return &amp; Refund</span>
+                </div>
+              </div>
+              <!-- section 3 -->
+               <div class="socialAccounts">
+                   <h3>SOCIAL ACCOUNTS</h3>
+                  <span><i class="fa-brands fa-facebook"></i> Facebook</span>
+                  <span><i class="fa-brands fa-instagram"></i> Instagram</span>
+                  <span><i class="fa-brands fa-youtube"></i>Youtube</span>
+                  <div class="socialIcons">
+                     <img src="./nandrimasalaimages/masterCard.png"/>
+                     <img src="./nandrimasalaimages/paypal.png"/>
+                     <img src="./nandrimasalaimages/amerianexpress.png"/>
+                     <img src="./nandrimasalaimages/bitcoin.png">
+                     <img src="./nandrimasalaimages/westernUnion.png"/>
+                     <img src="./nandrimasalaimages/visa.png"/>
+                  </div>
+               </div>
+               <!-- section 4 -->
+                <div class="followUs">
+                  <h3>FOLLOW US</h3>
+                  <span><i class="fa-brands fa-whatsapp"></i> &#40;&plus;91&#41;81100 44111</span>
+                </div>
+            </section>
+            <div class="copyRightSection">
+               <p>copyright &copy; Nandri Masala. All Rights Reserved Developed by Soundhar.</p>
+            </div>
+        </footer>
+    </main>
+    <!-- js file -->
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/allProducts.js"></script>
+</body>
+</html>
