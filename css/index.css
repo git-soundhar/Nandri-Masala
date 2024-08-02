@@ -193,7 +193,7 @@ header{
     top:0;
     left:-100%;
     transition:ease 0.5s;
-    z-index:9999999;
+    z-index:9999999999999999999999;
 }
 .showMenu{
     left:0 !important;
