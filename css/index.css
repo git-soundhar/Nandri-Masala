@@ -99,6 +99,8 @@ header{
     position:sticky;
     top:0;
     height:100px;
+    z-index:9999999999999999999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .navigationLinks{
     display: inline-flex;

@@ -6,7 +6,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:250,
         rate:185,
-        productImg:"../nandrimasalaimages/dindigulbriyanimasala.png"
+        productImg:"./nandrimasalaimages/dindigulbriyanimasala.png"
     },
     {
         id:"dindigul briyani mix and rice",
@@ -14,7 +14,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:500,
         rate:249,
-        productImg:"../nandrimasalaimages/dindigulbriyani&rice.png"
+        productImg:"./nandrimasalaimages/dindigulbriyani&rice.png"
     },
     {
         id:"cicken 65 masala",
@@ -22,7 +22,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:108,
-        productImg:"../nandrimasalaimages/chicken65.png"
+        productImg:"./nandrimasalaimages/chicken65.png"
     },
     {
         id:"mutton masala",
@@ -30,7 +30,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:149,
-        productImg:"../nandrimasalaimages/muttonmasal.png"
+        productImg:"./nandrimasalaimages/muttonmasal.png"
     },
     {
         id:"madurai mutton chukka",
@@ -38,7 +38,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:209,
-        productImg:"../nandrimasalaimages/maduraimuttonchukka.png"
+        productImg:"./nandrimasalaimages/maduraimuttonchukka.png"
     },
     {
         id:"varuthacurryi masala",
@@ -46,7 +46,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:149,
-        productImg:"../nandrimasalaimages/varuthakari.png"
+        productImg:"./nandrimasalaimages/varuthakari.png"
     },
     {
         id:"pepper chicken",
@@ -54,7 +54,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:195,
-        productImg:"../nandrimasalaimages/pepperchicken.png"
+        productImg:"./nandrimasalaimages/pepperchicken.png"
     },
     {
         id:"fish roast masala",
@@ -62,7 +62,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:132,
-        productImg:"../nandrimasalaimages/fishroast.png"
+        productImg:"./nandrimasalaimages/fishroast.png"
     },
     {
         id:"meen kuzhambu masala",
@@ -70,7 +70,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:113,
-        productImg:"../nandrimasalaimages/meenavarmeenkuzhambu.png"
+        productImg:"./nandrimasalaimages/meenavarmeenkuzhambu.png"
     },
     {
         id:"grab masala",
@@ -78,7 +78,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:218,
-        productImg:"../nandrimasalaimages/nandumasala.png"
+        productImg:"./nandrimasalaimages/nandumasala.png"
     },
     {
         id:"curry masala",
@@ -86,7 +86,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:133,
-        productImg:"../nandrimasalaimages/currymasala.png"
+        productImg:"./nandrimasalaimages/currymasala.png"
     },
     {
         id:"garam masala",
@@ -95,7 +95,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:233,
-        productImg:"../nandrimasalaimages/garammasala.png"
+        productImg:"./nandrimasalaimages/garammasala.png"
     },
     {
         id:"egg curry masala",
@@ -103,7 +103,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:223,
-        productImg:"../nandrimasalaimages/eggcurrymasala.png"
+        productImg:"./nandrimasalaimages/eggcurrymasala.png"
     },
     {
         id:"sambar powder",
@@ -111,7 +111,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:123,
-        productImg:"../nandrimasalaimages/sambarpodi.png"
+        productImg:"./nandrimasalaimages/sambarpodi.png"
     },
     {
         id:"kuzhambu masala",
@@ -119,7 +119,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:135,
-        productImg:"../nandrimasalaimages/kuzhambumasala.png"
+        productImg:"./nandrimasalaimages/kuzhambumasala.png"
     },
     {
         id:"idly powder",
@@ -127,7 +127,7 @@ let stocks=[
         veiety:"Masala andSpices",
         quantity:200,
         rate:137,
-        productImg:"../nandrimasalaimages/idlypodi.png"
+        productImg:"./nandrimasalaimages/idlypodi.png"
     },
     {
         id:"pulisadham powder",
@@ -135,7 +135,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:124,
-        productImg:"../nandrimasalaimages/pulisadhampodi.png"
+        productImg:"./nandrimasalaimages/pulisadhampodi.png"
     },
     {
         id:"dindigul briyani combo",
@@ -143,7 +143,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:1100,
         rate:760.5,
-        productImg:"../nandrimasalaimages/dindigulbriyanicombo.png"
+        productImg:"./nandrimasalaimages/dindigulbriyanicombo.png"
     },
     {
         id:"special combo",
@@ -151,7 +151,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:800,
         rate:674.1,
-        productImg:"../nandrimasalaimages/specialcombo.png"
+        productImg:"./nandrimasalaimages/specialcombo.png"
     },
     {
         id:"chicken masala ",
@@ -159,7 +159,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:152,
-        productImg:"../nandrimasalaimages/chickenmasala.png"
+        productImg:"./nandrimasalaimages/chickenmasala.png"
     },
     {
         id:"madurai kari kuszhambu masala",
@@ -167,7 +167,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:149,
-        productImg:"../nandrimasalaimages/maduraikarikuzhambumasala.png"
+        productImg:"./nandrimasalaimages/maduraikarikuzhambumasala.png"
     },
     {
         id:"rasam podi",
@@ -175,7 +175,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:191,
-        productImg:"../nandrimasalaimages/rasampodi.png"
+        productImg:"./nandrimasalaimages/rasampodi.png"
     },
     {
         id:"andhra paruppu sadha podi",
@@ -183,7 +183,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:106,
-        productImg:"../nandrimasalaimages/andhraparuppusadham.png"
+        productImg:"./nandrimasalaimages/andhraparuppusadham.png"
     },
     {
         id:"kadamba pickle",
@@ -191,7 +191,7 @@ let stocks=[
         veiety:"pickle and sambal",
         quantity:250,
         rate:330,
-        productImg:"../nandrimasalaimages/kasimedukadambapickle.png"
+        productImg:"./nandrimasalaimages/kasimedukadambapickle.png"
     },
     {
         id:"prawn sambal",
@@ -200,7 +200,7 @@ let stocks=[
         veiety:"pickle and sambal",
         quantity:250,
         rate:260,
-        productImg:"../nandrimasalaimages/prawnsambal.png"
+        productImg:"./nandrimasalaimages/prawnsambal.png"
     },
     {
         id:"srilankan masi sambal",
@@ -208,7 +208,7 @@ let stocks=[
         veiety:"Pickel and Sambal",
         quantity:120,
         rate:220,
-        productImg:"../nandrimasalaimages/srilankanmaasisambal.png"
+        productImg:"./nandrimasalaimages/srilankanmaasisambal.png"
     },
     {
         id:"rameswaram prawn pickle",
@@ -216,7 +216,7 @@ let stocks=[
         veiety:"Pickle and Sambal",
         quantity:250,
         rate:350,
-        productImg:"../nandrimasalaimages/rameswarameralpickle.png"
+        productImg:"./nandrimasalaimages/rameswarameralpickle.png"
     },
     {
         id:"maldives maasi pickle",
@@ -224,7 +224,7 @@ let stocks=[
         veiety:"Pickle and Sambal",
         quantity:250,
         rate:330,
-        productImg:"../nandrimasalaimages/maldivesmasipickle.png"
+        productImg:"./nandrimasalaimages/maldivesmasipickle.png"
     },
     {
         id:"vanjiram dry fish pickle",
@@ -232,7 +232,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:250,
         rate:430,
-        productImg:"../nandrimasalaimages/vanjaramdryfishpickle.png"
+        productImg:"./nandrimasalaimages/vanjaramdryfishpickle.png"
     },
     {
         id:"vanjiram fish pickle",
@@ -240,7 +240,7 @@ let stocks=[
         veiety:"Pickle and Sambal",
         quantity:250,
         rate:450,
-        productImg:"../nandrimasalaimages/vanjaramfishpickle.png"
+        productImg:"./nandrimasalaimages/vanjaramfishpickle.png"
     },
     {
         id:"virudhunagar mutton pickle",
@@ -248,7 +248,7 @@ let stocks=[
         veiety:"Pickle and Sambal",
         quantity:250,
         rate:450,
-        productImg:"../nandrimasalaimages/virudhunagarmuttonpickle.png"
+        productImg:"./nandrimasalaimages/virudhunagarmuttonpickle.png"
     },
     {
         id:"chettinad chicken pickle",
@@ -256,7 +256,7 @@ let stocks=[
         veiety:"Pickle and Sambal",
         quantity:250,
         rate:330,
-        productImg:"../nandrimasalaimages/chettinadchickenpickle.png"
+        productImg:"./nandrimasalaimages/chettinadchickenpickle.png"
     },
     {
         id:"groundnut oil",
@@ -264,7 +264,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:2000,
         rate:640,
-        productImg:"../nandrimasalaimages/groundnutoil.png"
+        productImg:"./nandrimasalaimages/groundnutoil.png"
     },
     {
         id:"ghee",
@@ -272,7 +272,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:1000,
         rate:958,
-        productImg:"../nandrimasalaimages/ghee.jpg"
+        productImg:"./nandrimasalaimages/ghee.jpg"
     },
     {
         id:"chettinad briyani mix",
@@ -280,7 +280,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:200,
         rate:210,
-        productImg:"../nandrimasalaimages/chettinaddum.png"
+        productImg:"./nandrimasalaimages/chettinaddum.png"
     },
     {
         id:"kollupodi",
@@ -288,7 +288,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:105,
-        productImg:"../nandrimasalaimages/kollupodi.png"
+        productImg:"./nandrimasalaimages/kollupodi.png"
     },
     {
         id:"ghee500",
@@ -296,7 +296,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:500,
         rate:488,
-        productImg:"../nandrimasalaimages/ghee.jpg"
+        productImg:"./nandrimasalaimages/ghee.jpg"
     },
     {
         id:"ghee200",
@@ -304,7 +304,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:200,
         rate:202,
-        productImg:"../nandrimasalaimages/ghee.jpg"
+        productImg:"./nandrimasalaimages/ghee.jpg"
     },
     {
         id:"coconut oil",
@@ -312,7 +312,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:1000,
         rate:315,
-        productImg:"../nandrimasalaimages/coconut\ oil.jpg"
+        productImg:"./nandrimasalaimages/coconut\ oil.jpg"
     },
     {
         id:"groundnut oil 1",
@@ -320,7 +320,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:1000,
         rate:325,
-        productImg:"../nandrimasalaimages/groundnutoil.png"
+        productImg:"./nandrimasalaimages/groundnutoil.png"
     },
     {
         id:"groundnut oil 500",
@@ -328,7 +328,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:500,
         rate:167,
-        productImg:"../nandrimasalaimages/groundnutoil.png"
+        productImg:"./nandrimasalaimages/groundnutoil.png"
     },
     {
         id:"seasame 1l",
@@ -336,7 +336,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:1000,
         rate:550,
-        productImg:"../nandrimasalaimages/seasameoil1l.jpg"
+        productImg:"./nandrimasalaimages/seasameoil1l.jpg"
     },
     {
         id:"seasame 500",
@@ -344,7 +344,7 @@ let stocks=[
         veiety:"Oil and Ghee",
         quantity:500,
         rate:280,
-        productImg:"../nandrimasalaimages/seasameoil500.png"
+        productImg:"./nandrimasalaimages/seasameoil500.png"
 
     },
     {
@@ -353,7 +353,7 @@ let stocks=[
         veiety:"Briyani mix and Combo",
         quantity:1000,
         rate:462,
-        productImg:"../nandrimasalaimages/briyanimixsingle.png"
+        productImg:"./nandrimasalaimages/briyanimixsingle.png"
     },
     {
         id:"kollu rasam",
@@ -362,7 +362,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:200,
         rate:141,
-        productImg:"../nandrimasalaimages/kongu\ kollu\ rasam.png"
+        productImg:"./nandrimasalaimages/kongu\ kollu\ rasam.png"
     },
     {
         id:"coconut 500",
@@ -370,7 +370,7 @@ let stocks=[
         veriety:"Oil and Ghee",
         quantity:500,
         rate:160,
-        productImg:"../nandrimasalaimages/coconut\ oil.jpg"
+        productImg:"./nandrimasalaimages/coconut\ oil.jpg"
     },
     {
         id:"salem naatu kozhi",
@@ -378,7 +378,7 @@ let stocks=[
         veriety:"Masala and Spices",
         quantity:200,
         rate:180,
-        productImg:"../nandrimasalaimages/salemnaatukozhi.png"
+        productImg:"./nandrimasalaimages/salemnaatukozhi.png"
     },
     {
         id:"andhra paruppu sadha podi 500",
@@ -386,7 +386,7 @@ let stocks=[
         veiety:"Masala and Spices",
         quantity:500,
         rate:199,
-        productImg:'../nandrimasalaimages/idlypodi.png'
+        productImg:'./nandrimasalaimages/idlypodi.png'
     },
     {
         id:"idly podi 500",
@@ -394,6 +394,6 @@ let stocks=[
         veriety:"Masala and Spices",
         quantity:500,
         rate:297,
-        productImg:"../nandrimasalaimages/idlypodi.png"
+        productImg:"./nandrimasalaimages/idlypodi.png"
     }
 ];
