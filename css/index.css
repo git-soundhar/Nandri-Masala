@@ -230,6 +230,10 @@ header{
     border-bottom:1px dotted var(--theme2);
     padding:10px 0;
 }
+.mobilenavigaltionLinks li a{
+    text-decoration:none;
+    color:var(--theme4);
+}
 .mobilenavigaltionLinks li:hover{
     background-color:var(--theme1);
     cursor:pointer;

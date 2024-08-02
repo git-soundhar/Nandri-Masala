@@ -27,51 +27,52 @@ let generateStoreRoom = () => {
 
 generateStoreRoom();
 
+// this is the empty array to push and pop products
 let addedStocks=[];
-
-//usedto increase the quantity
+//function to increase the quantity of the product
 let increment=(id)=>{
     let selectedItem=id;
     let search=addedStocks.find(x=>x.id===selectedItem);
-    console.log(search);
     if(search==undefined){
-        addedStocks.push({id:`${id}`,item:1})
-        
-        console.log(addedStocks);
+        addedStocks.push({id:selectedItem,item:1});
+        // console.log(addedStocks);
     }
     else{
-        search.item +=1;
-        console.log(addedStocks);
+        search.item+=1;
+        // console.log(addedStocks);
     }
-    update(selectedItem);
-};
-// used to decrease the quantity
+    update(id);
+}
+
+// function to decrement the quantity of the product
+
 let decrement=(id)=>{
     let selectedItem=id;
     let search=addedStocks.find(x=>x.id===selectedItem);
-    if(search===undefined){
+    if(search==undefined){
         alert(`you never added ${id}`);
+        // console.log(addedStocks);
     }
-    else if(search.item===0) return;
+    else if(search.item==0) return;
     else{
-        search.item -=1;
-        console.log(search);
+        search.item-=1;
+        // console.log(addedStocks);
     }
-    // used to show increment of the quantity
-    update(selectedItem);
-}; 
-
-
-// used to update the quantity
-let update=(id)=>{
-   let search=addedStocks.find(x=>x.id===id);
-   document.getElementById(id).innerHTML=search.item;
-   console.log(addedStocks,"console from update");
-   mainCart();
+    update(id);
 }
 
-let mainCart=()=>{
-   let totalProduct=addedStocks.map(x=>x.item);
-   let mainCartNotification=document.getElementById('badge');
-   mainCartNotification.innerHTML=totalProduct.reduce((x,y)=>x+y,0);
+// function to update increased and decreased quantity of a product
+
+let update=(id)=>{
+    let search=addedStocks.find(x=>x.id===id);
+    console.log(search);
+    document.getElementById(id).innerHTML=search.item;
+    cartUpdate();
+}
+// function to update the total quantity to the main cart logo
+let cartUpdate=()=>{
+    let total=addedStocks.map(x=>x.item);
+
+    document.getElementById('badge').innerHTML=total.reduce((x,y)=>x+y,0);
+    // console.log(current);
 }
