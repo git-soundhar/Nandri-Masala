@@ -9,8 +9,8 @@
     <!-- css link -->
      <link rel="stylesheet" type="text/css" href="./css/allProducts.css"/>
 </head>
-<body>
-    <main class="AllProductsSection">
+<body id="allProducts">
+    <main class="AllProductsSection" id="AllProductsSection">
         <header>
             <!-- topbar section -->
               <section class="topBar">
@@ -44,7 +44,7 @@
 
               <div class="navLeft">
                   <ul id="leftNavigation" class="navigationLinks">
-                     <li><a href="./allProducts.html">All Products</a></li>
+                     <li><a href="./allProducts.html" class="active">All Products</a></li>
                      <li><a href="#">Masala and Spices</a></li>
                      <li><a href="#">BriyaniMix and Combo</a></li>
                   </ul> 
@@ -63,7 +63,7 @@
               </div>
               <!-- cart button -->
               <div id="cartLogo">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cart-shopping" ></i>
                 <span class="badge" id="badge">0</span>
               </div>
            </nav>
@@ -101,7 +101,6 @@
             </div>
             <!-- stock view area -->
             <section class="allProductsCards" id="stockView">
-
               
             </section>
          </main>
@@ -154,9 +153,26 @@
             </div>
         </footer>
     </main>
+    
+    <!-- cart section -->
+     <section id="mainCart" class="mainCart">
+         <nav>
+           <h3>Shopping Cart</h3>
+           <i class="fa-solid fa-x" id="closeCart"></i>
+         </nav>
+         <section id="selectedProductsContainer" class="selectedProductsContainer">
+             
+         </section>
+         <div class="cartTotal" id="cartSubTotal">
+          <span>SUB TOTAL</span>
+          <span>&#8377;</span>
+        </div>
+        <div class="checkoutBtn" id="checkoutBtn">PROCEED TO CHECKOUT</div>
+     </section>
     <!-- js file -->
     <script src="./js/data.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/allProducts.js"></script>
+    <script src="./js/index.js"></script>
+    
 </body>
 </html>
