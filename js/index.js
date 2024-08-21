@@ -27,3 +27,9 @@ closeCartIcon.addEventListener('click',(e)=>{
     document.getElementById('mainCart').classList.add('smooth');
     document.getElementById('stockView').classList.toggle('opacityBackground'); 
 });
+console.log(addedStocks);
+let homeCartUpdate=()=>{
+    let totalQty=addedStocks.map((x)=>x.item);
+    document.getElementById('badge').innerHTML=totalQty.reduce((x,y)=>x+y,0);
+  }
+  homeCartUpdate();
